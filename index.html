@@ -1,0 +1,55 @@
+ <html>
+  <head>
+    <title> Image recognition </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+
+      <br><br>
+<h1> Everyday Object Recognizer</h1>
+<p id="p text"> Try It Now!</p>
+      <p style="font-size: 22px;">Model is trained to identify the following objects:</p>
+ <span>Duct Tape</span> <img id="duct_tape" src="6973305.png"> </img>
+ <br>
+<span> Waterbottle </span> <img id="Waterbottle" src="107692624-bottle-vector-icon-isolated-on-transparent-background-bottle-logo-concept.webp"></img>
+ <br>
+ Whiteboard
+ <br>
+ Eraser
+ <br>
+ Your Background
+ <br>
+      <label>Webcam View - </label>
+<div id="camera"></div>
+      <br><br>
+<div id="result"> </div>
+      <br><br>
+      <button onclick="take_snapshot();" class="btn btn-info"> Capture Image</button>
+      <button onclick="check();" class="btn btn-success"> Identify Image</button>
+      <br><br>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Object :  </p>
+      <p style="font-size: 22px;">Accuracy :  </p>
+    </center>
+ 
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
